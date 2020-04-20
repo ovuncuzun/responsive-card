@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <div class="common">
+    <!-- Section Start -->
+    <section class="common-section">
         <div class="container">
-            <div class="card">
-                <div class="card-side">
+            <div class="card-1 card-common" id="card-1">
+                <div class="side front">
                     <div class="card-side-left">
                         <img src="banner.jpg" alt="">
                     </div>
@@ -22,12 +23,12 @@
                             <h2>£1000 Bonus</h2>
                         </div>
                         <div class="card-body">
-                            <p><span>Join</span> Open an account whit us, it takes just a few minutes </p>
+                            <p><span>Join</span> Open an account with us, it takes just a few minutes </p>
                             <p><span>Deposit</span> Place a single bet up to £30 on any sport in our Sportsbook</p>
                         </div>
                         <div class="card-footer">
                             <div class="btn-wrapper">
-                                <a class="btn" href="#" id="call-back"><img src="swap-icon.svg" alt="">Ts&Cs</a>
+                                <a class="btn" href="#" id="call-back"><img src="swap-icon.svg" alt=""> Ts&Cs</a>
                                 <a class="btn" href="#">FIND OUT MORE</a>
                                 <a class="btn join-now" href="#">JOIN NOW</a>
                             </div>
@@ -35,8 +36,58 @@
                     </div>
                 </div>
             </div>
+            <div class="card-2 card-common flipped" id="card-2">
+                <div class="side back">
+                    <div class="card-side-right">
+                        <div class="card-header">
+                            <h5><span>888Casino</span> £1000 Bonus</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="terms-wrapper scrollbar">
+                                <h6>Terms & Conditions</h6>
+                                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book.
+                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book.
+                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book.
+                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-wrapper">
+                                <a class="btn" href="#" id="call-front"><img src="swap-icon.svg" alt=""> BACK</a>
+                                <a class="btn join-now" href="#">JOIN NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- Section End -->
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        document.getElementById('call-back').onclick = function () {
+            document.getElementById('card-1').classList.toggle('flipped');
+            document.getElementById('card-2').classList.toggle('flipped');
+        };
+        document.getElementById('call-front').onclick = function () {
+            document.getElementById('card-2').classList.toggle('flipped');
+            document.getElementById('card-1').classList.toggle('flipped');
+        };
+    });
+</script>
 
 </html>
