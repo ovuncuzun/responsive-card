@@ -91,6 +91,26 @@ body {
     box-sizing: border-box;
 }
 
+.card-footer .btn-wrapper .btn img {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    padding: 0 10px;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    visibility: hidden;
+    filter: invert(43%) sepia(43%) saturate(1420%) hue-rotate(341deg) brightness(99%) contrast(106%);
+}
+
+.card-footer .btn-wrapper .btn:hover img {
+    visibility: visible;
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
 .card-footer .btn-wrapper .btn.join-now {
     background: #f95f1c;
     color: #fff;
