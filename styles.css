@@ -151,12 +151,10 @@ body {
     line-height: 25px;
     text-decoration: none;
     position: relative;
-    transition: all 0.5s linear;
+    transition: background 0.5s linear;
     border: 2px solid transparent;
     box-sizing: border-box;
 }
-
-
 
 .card-footer .btn-wrapper .btn img {
     position: absolute;
@@ -286,13 +284,13 @@ body {
     }
 
     .card-2 {
-        top: 15px;
+        top: 0;
         align-items: center;
         height: 100%;
         position: absolute;
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
+        bottom: 0;
+        left: 0;
+        right: 0;
         box-sizing: border-box;
         width: auto;
     }
